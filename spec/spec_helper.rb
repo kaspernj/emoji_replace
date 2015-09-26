@@ -1,4 +1,6 @@
-require 'simplecov'
+require "simplecov"
+require "emoji_replace"
+require "factory_girl_rails"
 
 module SimpleCov::Configuration
   def clean_filters
