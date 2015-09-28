@@ -1,6 +1,15 @@
 require "simplecov"
 require "emoji_replace"
-require "factory_girl_rails"
+require "factory_girl"
+
+require "active_record"
+require "sqlite3"
+
+ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
+
+load "#{File.dirname(__FILE__)}/schema.rb"
+require "#{File.dirname(__FILE__)}/models/message"
+require "#{File.dirname(__FILE__)}/factories/message"
 
 module SimpleCov::Configuration
   def clean_filters
@@ -27,5 +36,5 @@ require 'emoji_replace'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
-
+  config.include FactoryGirl::Syntax::Methods
 end

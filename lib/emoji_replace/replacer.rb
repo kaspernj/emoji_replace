@@ -21,7 +21,11 @@ class EmojiReplace::Replacer
       moji_name = match[1]
       moji = @index.find_by_name(moji_name)
 
-      "<img alt=\"#{moji.fetch("name")}\" class=\"emoji\" src=\"#{Emoji.image_url_for_name(moji_name)}\">"
+      if args[:html]
+        "<img alt=\"#{moji.fetch("name")}\" class=\"emoji\" src=\"#{Emoji.image_url_for_name(moji_name)}\">"
+      else
+        moji.fetch("moji")
+      end
     end
 
     return self

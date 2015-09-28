@@ -12,6 +12,7 @@ group :development do
   gem "jeweler", "~> 2.0.1"
   gem "simplecov", ">= 0"
   gem "activerecord", ">= 4.0.0"
-  gem "factory_girl_rails", ">= 4.5.0"
+  gem "sqlite3"
+  gem "factory_girl"
   gem "emoji", ">= 1.0.5"
 end
