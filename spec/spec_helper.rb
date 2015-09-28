@@ -1,3 +1,6 @@
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 require "simplecov"
 require "emoji_replace"
 require "factory_girl"

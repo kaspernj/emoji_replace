@@ -16,3 +16,5 @@ group :development do
   gem "factory_girl"
   gem "emoji", ">= 1.0.5"
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
