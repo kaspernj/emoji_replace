@@ -3,6 +3,8 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
+gem "emoji", ">= 1.0.5"
+
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
 group :development do
@@ -16,7 +18,6 @@ group :development do
   gem "jdbc-sqlite3", platform: :jruby
   gem "activerecord-jdbc-adapter", platform: :jruby
   gem "factory_girl"
-  gem "emoji", ">= 1.0.5"
 end
 
 gem "codeclimate-test-reporter", group: :test, require: nil
