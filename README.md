@@ -2,6 +2,8 @@
 
 A library to work around the special UTF8MB4 encoding in Ruby and Ruby on Rails.
 
+Uses the "emoji" gem here: https://github.com/wpeterson/emoji
+
 ## Install
 
 Add this to your Gemfile and bundle:
