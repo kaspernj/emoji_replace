@@ -1,9 +1,17 @@
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 require "simplecov"
 require "emoji_replace"
 require "factory_girl"
-
 require "active_record"
-require "sqlite3"
+
+if RUBY_PLATFORM == "java"
+  require "jdbc/sqlite3"
+  ::Jdbc::SQLite3.load_driver
+else
+  require "sqlite3"
+end
 
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
