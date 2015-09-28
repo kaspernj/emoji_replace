@@ -14,6 +14,7 @@ group :development do
   gem "activerecord", ">= 4.0.0"
   gem "sqlite3", platform: :ruby
   gem "jdbc-sqlite3", platform: :jruby
+  gem "activerecord-jdbc-adapter", platform: :jruby
   gem "factory_girl"
   gem "emoji", ">= 1.0.5"
 end
