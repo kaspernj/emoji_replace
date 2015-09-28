@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors = ["kaspernj"]
   s.date = "2015-09-28"
-  s.description = "TODO: longer description of your gem"
+  s.description = "A library to automatically handle Emoji's without crashing your MySQL database"
   s.email = "k@spernj.org"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/kaspernj/emoji_replace"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.2.2"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "A library to automatically handle Emoji's without crashing your MySQL database"
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
