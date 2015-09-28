@@ -1,3 +1,7 @@
+[![Build Status](https://api.shippable.com/projects/5608fd811895ca4474187ec1/badge?branchName=master)](https://app.shippable.com/projects/5608fd811895ca4474187ec1/builds/latest)
+[![Code Climate](https://codeclimate.com/github/kaspernj/emoji_replace/badges/gpa.svg)](https://codeclimate.com/github/kaspernj/emoji_replace)
+[![Test Coverage](https://codeclimate.com/github/kaspernj/emoji_replace/badges/coverage.svg)](https://codeclimate.com/github/kaspernj/emoji_replace/coverage)
+
 # EmojiReplace
 
 A library to work around the special UTF8MB4 encoding in Ruby and Ruby on Rails.
