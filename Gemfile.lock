@@ -101,6 +101,7 @@ DEPENDENCIES
   codeclimate-test-reporter
   emoji (>= 1.0.5)
   factory_girl
+  jdbc-sqlite3
   jeweler (~> 2.0.1)
   rdoc (~> 3.12)
   rspec (~> 3.3.0)
